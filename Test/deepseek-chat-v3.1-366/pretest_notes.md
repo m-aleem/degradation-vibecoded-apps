@@ -1,0 +1,8 @@
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser1", "email": "testuser1@example.com", "password": "pass123"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser2", "email": "testuser2@example.com", "password": "pass1232"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser3", "email": "testuser3@example.com", "password": "pass1233"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser4", "email": "testuser4@example.com", "password": "pass1234"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser5", "email": "testuser5@example.com", "password": "pass1235"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser6", "email": "testuser6@example.com", "password": "pass1236"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser7", "email": "testuser7@example.com", "password": "pass1237"}'
+curl -X POST http://localhost:8000/api/auth/register -H "Content-Type: application/json"  -d '{"username": "testuser8", "email": "testuser8@example.com", "password": "pass1238"}'

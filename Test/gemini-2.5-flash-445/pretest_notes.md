@@ -1,0 +1,8 @@
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser1&password=pass123&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser2&password=pass1232&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser3&password=pass1233&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser4&password=pass1234&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser5&password=pass1235&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser6&password=pass1236&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser7&password=pass1237&scope=&client_id=&client_secret='
+curl -X 'POST' 'http://localhost:8000/register' -H 'accept: application/json' -H 'Content-Type: application/x-www-form-urlencoded' -d 'grant_type=&username=testuser8&password=pass1238&scope=&client_id=&client_secret='
