@@ -89,7 +89,7 @@ rm *
 9) In Terminal 3, begin monitoring script.
 ```
 CLEAN_APP_NAME="${APP_NAME/./}"
-python3 monitor_docker_project.py --interval 60 --duration $DURATION --project $CLEAN_APP_NAME --csv $TEST_DIR/Output/monitor_results.csv
+python3 monitor_docker.py --interval 60 --duration $DURATION --project $CLEAN_APP_NAME --csv $TEST_DIR/Output/monitor_results.csv
 ```
 
 10) (Optionally) In Terminal 4, monitor the Output.
