@@ -1,0 +1,32 @@
+
+services:
+  db:
+    image: mysql:8.0
+    environment:
+      MYSQL_DATABASE: rtrs_db
+      MYSQL_USER: rtrs_user
+      MYSQL_PASSWORD: rtrs_pass
+      MYSQL_ROOT_PASSWORD: rootpass
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -prootpass --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build:
+      context: ./back-end
+    env_file:
+      - ./back-end/.env
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+       - "${HOST_PORT:-5001}:5000"
+    restart: unless-stopped
+
+volumes:
+  db_data:
